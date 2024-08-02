@@ -1,7 +1,7 @@
 {
+  "homepage": "https://chandler-r.github.io/react-portfolio",
   "name": "react-portfolio",
   "version": "0.1.0",
-  "homepage": "https://chandler-r.github.io/react-portfolio",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
