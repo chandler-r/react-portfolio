@@ -1,0 +1,19 @@
+.about-page{
+    .text-zone{
+        position: absolute;
+        top: 5%;
+        left: 10%;
+    }
+    h1 {
+        flex: auto;
+        color: #6e2020;
+        font-size: 40px;
+        margin: 0;
+        font-family: 'Coolvetica';
+        font-weight: 400;
+        letter-spacing: 2px;
+    }
+    img{
+        width: 50px;
+    }
+}

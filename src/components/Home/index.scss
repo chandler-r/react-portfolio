@@ -1,15 +1,15 @@
 .home-page {
   .text-zone {
     position: absolute;
-    left: 10%;
+    left: 15%;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-45%);
     width: 40%;
     max-height: 90%;
   }
   h1 {
     color: #6e0202;
-    font-size: 53px;
+    font-size: 40px;
     margin: 0;
     font-family: 'Coolvetica';
     font-weight: 400;
@@ -18,7 +18,7 @@
     &::before {
       content: '<h1>';
       font-family: 'La Belle Aurore';
-      color: #0d3d00;
+      color: #3d0000;
       font-size: 18px;
       position: absolute;
       margin-top: -40px;
@@ -28,7 +28,7 @@
     &::after {
       content: '<h1/>';
       font-family: 'La Belle Aurore';
-      color: #0d3d00;
+      color: #3d0000;
       font-size: 18px;
       position: absolute;
       margin-top: 18px;
@@ -38,12 +38,12 @@
     }
 
     img {
-      width: 55px;
-      margin-left: 18px;
+      width: 50px;
+      margin-left: 20px;
       opacity: 0;
       height: auto;
       animation: rotateIn 1s linear both;
-      animation-delay: 1.4s;
+      animation-delay: 1s;
     }
   }
 
