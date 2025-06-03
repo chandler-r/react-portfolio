@@ -20,8 +20,9 @@
       font-family: 'La Belle Aurore';
       color: #3d0000;
       font-size: 18px;
-      position: absolute;
-      margin-top: -40px;
+      position: relative;
+      display: block;
+      margin-bottom: 10px;
       opacity: 0.6;
     }
 
@@ -30,9 +31,9 @@
       font-family: 'La Belle Aurore';
       color: #3d0000;
       font-size: 18px;
-      position: absolute;
-      margin-top: 18px;
-      margin-left: 20px;
+      position: relative;
+      display: block;
+      margin-top: 15px;
       animation: fadeIn 1s 1.7s backwards;
       opacity: 0.6;
     }
@@ -40,6 +41,8 @@
     img {
       width: 50px;
       margin-left: 20px;
+      margin-bottom: -1px;
+      vertical-align: middle;
       opacity: 0;
       height: auto;
       animation: rotateIn 1s linear both;
@@ -55,6 +58,22 @@
     font-family: sans-serif;
     letter-spacing: 4px;
     animation: fadeIn 1s 1.7s backwards;
+
+    .wrap {
+      display: inline-block;
+    }
+
+    .cursor {
+      display: inline-block;
+      margin-left: 3px;
+      animation: blink 1s infinite;
+    }
+  }
+
+  @keyframes blink {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
   }
 
   .flat-button {

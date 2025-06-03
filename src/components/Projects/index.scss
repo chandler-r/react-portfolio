@@ -1,0 +1,26 @@
+.projects-page {
+  .text-zone {
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    transform: translateY(-45%);
+    width: 40%;
+    max-height: 90%;
+  }
+
+  h1 {
+    color: #6e0202;
+    font-family: 'Coolvetica';
+    font-size: 40px;
+    font-weight: 400;
+    margin: 0;
+    letter-spacing: 2px;
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+}
