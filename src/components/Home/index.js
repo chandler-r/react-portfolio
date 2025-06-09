@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
-import LogoTitle from '../../assets/images/lett_C.png'
 import './index.scss'
+import ImageGallery from '../ImageGallery'
 
 const Home = () => {
   const [role, setRole] = useState('')
@@ -52,6 +52,7 @@ const Home = () => {
           CONTACT ME
         </Link>
       </div>
+      <ImageGallery/>
     </div>
   )
 }

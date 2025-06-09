@@ -1,0 +1,60 @@
+.gallery-container {
+  position: absolute;
+  right: 15%;
+  top: 50%;
+  transform: translateY(-45%);
+  width: 40%;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  height: 100%;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: tranform 0.3s ease;
+        
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    &.large {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    &.medium {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+
+    &.small {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    } 
+    to {
+        opacity: 1;
+    }
+    
+}
