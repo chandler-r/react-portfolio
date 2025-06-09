@@ -8,10 +8,22 @@ const ImageGallery = () => {
     {
       id: 1,
       images: [
-        { src: 'https://github.com/chandler-r/react-portfolio/blob/main/public/images/gallery/image3.jpg', size: 'small' },
-        { src: 'https://picsum.photos/400/400', size: 'medium' },
-        { src: 'https://picsum.photos/400/400', size: 'small' },
-        { src: 'https://picsum.photos/400/400', size: 'large' },
+        {
+          src: `${process.env.PUBLIC_URL}/images/gallery/test4.jpg`,
+          size: 'small',
+        },
+        {
+          src: `${process.env.PUBLIC_URL}/images/gallery/image1.jpg`,
+          size: 'medium',
+        },
+        {
+          src: `${process.env.PUBLIC_URL}/images/gallery/image2.jpg`,
+          size: 'small',
+        },
+        {
+          src: `${process.env.PUBLIC_URL}/images/gallery/image3.jpg`,
+          size: 'large',
+        },
       ],
     },
   ]
